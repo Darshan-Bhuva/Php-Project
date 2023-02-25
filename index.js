@@ -6,3 +6,4 @@ window.addEventListener("mousemove", (event) => {
         innner_dot.setAttribute("style", `transform:translate(${event.clientX - 5}px,${event.clientY - 5}px)`);
     }, 200)
 })
+AOS.init();

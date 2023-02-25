@@ -14,6 +14,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -39,7 +43,7 @@
   </div>
 
   <section id="home" class="sections">
-    <div class="welcome_home">
+    <div class="welcome_home" data-aos="fade-up" data-aos-duration="1500">
       <p id="wtm"><small> WELCOME TO MEDIPLUS</small></p>
       <br /><br />
       <h1 id="homeh1">We are here</h1>
@@ -58,8 +62,8 @@
 
   <section id="About" class="sections">
     <div class="main-about">
-      <div class="image-about"></div>
-      <div class="medical">
+      <div data-aos="fade-right" data-aos-duration="1500" class="image-about"></div>
+      <div class="medical" data-aos="fade-left" data-aos-duration="1500">
         <h1>We Are <span class="s1">Mediplus</span> A</h1>
         <h1>Medical Clinic</h1>
         <br />
@@ -82,7 +86,7 @@
           <h2 id="os">Our Services</h2>
         </div>
         <div class="i12">
-          <div class="i" id="i1">
+          <div class="i" id="i1" data-aos="fade-up-right" data-aos-duration="1500">
             <div id="lock_logoi1">
               <div class="logo" id="amb"></div>
             </div>
@@ -94,7 +98,7 @@
               </p>
             </div>
           </div>
-          <div class="i" id="i2">
+          <div class="i" id="i2" data-aos="fade-up-left" data-aos-duration="1500">
             <div id="lock_logoi2">
               <div class="logo" id="doc"></div>
             </div>
@@ -110,7 +114,7 @@
         </div>
         <br /><br /><br />
         <div class="i34">
-          <div class="i" id="i3">
+          <div class="i" id="i3"data-aos="fade-down-right" data-aos-duration="1500">
             <div id="lock_logoi3">
               <div class="logo" id="steth"></div>
             </div>
@@ -123,7 +127,7 @@
               </p>
             </div>
           </div>
-          <div class="i" id="i4">
+          <div class="i" id="i4" data-aos="fade-down-left" data-aos-duration="1500">
             <div id="lock_logoi4">
               <div class="logo" id="hours"></div>
             </div>
@@ -157,8 +161,8 @@
       </div>
     </div>
 
-    <div id="about2">
-      <div class="about_detail">
+    <div id="about2" >
+      <div class="about_detail" data-aos="zoom-in-down" data-aos-duration="1500">
         <h1 class="ab_detail">Your Health is Our Priority</h1>
         <p class="ab_detail">
           We can manage your dream building A small river named Duden flows by
@@ -359,7 +363,9 @@
   <section id="contact" class="sections"></section>
   <a class="add" href="#headerr"></a>
 </body>
-
-
-
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
